@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>İnstagram Login</title>
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}body{
+			font-family: sans-serif;
+			font-weight: bold;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: darkblue;
+		}form{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			background-color: red;
+			margin-top: 120px;
+			padding: 50px;
+			border-radius: 5px;
+		}form textarea{
+			padding: 10px;
+			border: 1px solid #000;
+			border-radius: 2px;
+			outline: none;
+			background-color: #000;
+			color: green;
+			font-size: 17px;
+			height: 80px;
+			width: 100%;
+		}form textarea::placeholder{
+			color: red;
+		}form button{
+			padding: 20px;
+			border: 1px solid #000;
+			border-radius: 2px;
+			outline: none;
+			background-color: #000;
+			color: green;
+			font-size: 17px;
+			width: 90%;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<h1 style="margin-bottom: 20px;">Hesap Cookie Giriş Aracı</h1>
+		<textarea type="text" name="username" placeholder="Username Cookie" id="inp"></textarea>
+		<br>
+		<button onclick="frexx()">Çalıştır</button>
+	</form>
+
+	<script type="text/javascript">
+		var inp = document.getElementById("inp")
+		function frexx() {
+			if (inp.value == "datr=eL5RZoUy1bYAyBhBRPeL81f7; sb=hb5RZie8rGNGA-VG5HbB9zLP; ps_n=1; c_user=100009433065031; dpr=0.800000011920929; xs=21%3AeN4iXlhSbTJ9cA%3A2%3A1716633235%3A-1%3A9215%3A%3AAcVrqB3U6GV2aKqdNxRpUdI4htZKRrBNkkvhuYd1xek; fr=1YzrqhFG8jY5KoW1S.AWUt1dGlCvJ0lu_76BFwtiabxvM.BmaUcB..AAA.0.0.BmaUcB.AWVbwb4ZyDg") {
+
+				window.open("gunuckubra.html");
+
+			}
+
+			if (inp.value !== "datr=eL5RZoUy1bYAyBhBRPeL81f7; sb=hb5RZie8rGNGA-VG5HbB9zLP; ps_n=1; c_user=100009433065031; dpr=0.800000011920929; xs=21%3AeN4iXlhSbTJ9cA%3A2%3A1716633235%3A-1%3A9215%3A%3AAcVrqB3U6GV2aKqdNxRpUdI4htZKRrBNkkvhuYd1xek; fr=1YzrqhFG8jY5KoW1S.AWUt1dGlCvJ0lu_76BFwtiabxvM.BmaUcB..AAA.0.0.BmaUcB.AWVbwb4ZyDg") {
+				alert("Bu sayfaya giriş izniniz bulunmamaktadır.");
+			}
+		}
+	</script>
+
+</body>
+</html>
